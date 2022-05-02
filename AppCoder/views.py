@@ -10,3 +10,19 @@ def curso(self):
     curso.save()
     texto=f"curso: {curso.nombre} comision: {curso.comision}"
     return HttpResponse(texto)
+
+
+def inicio(request):
+    return HttpResponse(request, "AppCoder/inicio.html")
+
+def profesores(request):
+    return HttpResponse(request, 'AppCoder/profesores.html')
+
+def estudiantes(request):
+    return HttpResponse("Esta es la pagina de estudiantes")
+
+def cursos(request):
+    return HttpResponse("Esta es la pagina de cursos")
+
+def entregables(request):
+    return HttpResponse("Esta es la pagina de profesores")
